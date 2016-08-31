@@ -6,12 +6,12 @@ apt-get install -y  \
   nginx
 
 echo -e "==========\nSITES\n=========="
-mkdir -p /var/www/local/public
-echo -e "<html>\n\t<h1>dev.local</h1>\n</html>\n" > /var/www/local/public/index.html
-mkdir -p /var/www/sandbox
-echo -e "<?php\nphpinfo();\n" > /var/www/sandbox/index.php
-mkdir -p /var/www/docs
-echo -e "<html>\n\t<h1>doc.local</h1>\n\t<p>Nothing yet.</p>\n</html>\n" > /var/www/docs/index.html
+mkdir -p /var/www/dev/public
+echo -e "<html>\n\t<h1>dev.local</h1>\n</html>\n" > /var/www/dev/public/index.html
+mkdir -p /var/www/box
+echo -e "<?php\nphpinfo();\n" > /var/www/box/index.php
+mkdir -p /var/www/doc
+echo -e "<html>\n\t<h1>doc.local</h1>\n\t<p>Nothing yet.</p>\n</html>\n" > /var/www/doc/index.html
 
 echo -e "==========\nCONFIG\n=========="
 # user for nginx
