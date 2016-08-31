@@ -26,4 +26,5 @@ echo -e "==========\nCAUTION\n=========="
 # just
 chmod -R 777 /var/www
 
-
+echo -e "==========\nJUMPSTART\n=========="
+/etc/init.d/nginx restart
