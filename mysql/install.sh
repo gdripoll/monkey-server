@@ -1,4 +1,4 @@
-
+#!/bin/bash
 clear
 echo -e "==========\nWORKING\n=========="
 apt-get update
