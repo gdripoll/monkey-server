@@ -11,13 +11,13 @@ apt-get autoremove
 apt-get clean
 
 echo -e "==========\nSETTING\n=========="
-echo "alias ll='ls -al'" >> /home/$USERNAME/.bashrc
+echo "alias ll='ls -al'" >> ~/.bashrc
 echo "alias ll='ls -al'" >> /root/.bashrc
 # vim (.vimrc)
-echo "set tabstop=2" > /home/$USERNAME/.vimrc
-echo "set nu" >> /home/$USERNAME/.vimrc
-echo "syntax on" >> /home/$USERNAME/.vimrc
-cp /home/$USERNAME/.vimrc /root/.vimrc
-chown $USERNAME:$USERNAME /home/$USERNAME/.vimrc
+echo "set tabstop=2" > ~/.vimrc
+echo "set nu" >> ~/.vimrc
+echo "syntax on" >> ~/.vimrc
+cp ~/.vimrc /root/.vimrc
+chown $USERNAME:$USERNAME ~/.vimrc
 
 echo -e "==========\nREADY\n=========="
