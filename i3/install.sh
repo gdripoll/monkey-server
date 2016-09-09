@@ -7,7 +7,7 @@ echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt
 apt-get update
 apt-get --allow-unauthenticated install sur5r-keyring
 apt-get update
-apt install -y i3 
+apt install -y i3 i3status nitrogen
 
 echo -e "==========\nCONFIG\n=========="
 mkdir /home/$USERNAME/.i3
