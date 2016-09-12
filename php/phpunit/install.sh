@@ -2,6 +2,8 @@
 
 clear
 echo -e "==========\nWORKING\n=========="
+apt update
+apt install -y php5-xdebug
 cd /opt
 mkdir phpunit
 chmod -R 777 phpunit

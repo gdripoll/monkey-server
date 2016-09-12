@@ -2,6 +2,9 @@
 clear
 echo -e "==========\nWORKING\n=========="
 
+apt update
+apt install -y php-pear php5-dev libgmp-dev
+
 mkdir /tmp/cassandra && \
 cp config/* /tmp/cassandra && \
 cd /tmp/cassandra && \
