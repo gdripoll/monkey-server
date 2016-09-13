@@ -6,11 +6,11 @@ cd /opt
 mkdir phpunit
 chmod -R 777 phpunit
 cd phpunit
-wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
-ln -s /opt/phpunit/phpunit.phar /usr/bin/phpunit
+wget https://phar.phpunit.de/phpunit-old.phar
+chmod +x phpunit-old.phar
+ln -s /opt/phpunit/phpunit-old.phar /usr/bin/phpunit-old
 cd /
-phpunit --version
+phpunit-old --version
 
 echo -e "==========\nREADY\n=========="
 
