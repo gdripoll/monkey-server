@@ -24,7 +24,7 @@ sudo apt-get update
 wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/dependencies/libuv/v1.7.5/libuv_1.7.5-1_amd64.deb
 wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/dependencies/libuv/v1.7.5/libuv-dev_1.7.5-1_amd64.deb
 wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.4.2/cassandra-cpp-driver_2.4.2-1_amd64.deb
-wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.0.1/cassandra-cpp-driver-dev_2.4.2-1_amd64.deb
+wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.4.2/cassandra-cpp-driver-dev_2.4.2-1_amd64.deb
 
 #sudo curl http://downloads.datastax.com/cpp-driver/ubuntu/14.04/libuv_1.7.5-1_amd64.deb > /var/www/html/libuv_1.7.5-1_amd64.deb
 #sudo curl http://downloads.datastax.com/cpp-driver/ubuntu/14.04/libuv-dev_1.7.5-1_amd64.deb > /var/www/html/libuv-dev_1.7.5-1_amd64.deb
