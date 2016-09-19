@@ -33,8 +33,8 @@ wget http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.4.2/cass
 
 sudo dpkg -i libuv_1.7.5-1_amd64.deb
 sudo dpkg -i libuv-dev_1.7.5-1_amd64.deb
-sudo dpkg -i cassandra-cpp-driver_2.0.1-1_amd64.deb
-sudo dpkg -i cassandra-cpp-driver-dev_2.0.1-1_amd64.deb
+sudo dpkg -i cassandra-cpp-driver_2.4.2-1_amd64.deb
+sudo dpkg -i cassandra-cpp-driver-dev_2.4.2-1_amd64.deb
 sudo apt-get update
 
 sudo pecl install cassandra
