@@ -3,7 +3,7 @@ clear
 echo -e "==========\nWORKING\n=========="
 
 apt update
-apt install -y php-pear php5-dev libgmp-dev g++ git make cmake clang libssl-dev libgmp-dev php5-cgi php5-fpm php5 php5-dev openssl libpcre3-dev libc6
+apt install -y php-pear php-dev libgmp-dev g++ git make cmake clang libssl-dev libgmp-dev openssl libpcre3-dev libc6
 
 mkdir /tmp/cassandra && \
 cp config/* /tmp/cassandra && \

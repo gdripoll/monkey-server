@@ -13,6 +13,8 @@ apt-get -y install	\
 	php7.0-dev 				\
   php-pear          \
 	php-mysql 				\
+  php-bcmath        \
+  php-mbstring      \
 	php7.0-zip 
 
 echo -e "==========\nLINKS\n=========="
