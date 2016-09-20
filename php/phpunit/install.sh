@@ -7,7 +7,7 @@ mkdir phpunit
 chmod -R 777 phpunit
 cd phpunit
 wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
+chmod uog+x phpunit.phar
 ln -s /opt/phpunit/phpunit.phar /usr/bin/phpunit
 cd /
 phpunit --version
