@@ -11,6 +11,7 @@ apt-get -y install	\
 	php7.0-json 			\
 	php7.0-mcrypt 		\
 	php7.0-dev 				\
+  php-pear          \
 	php-mysql 				\
 	php7.0-zip 
 
