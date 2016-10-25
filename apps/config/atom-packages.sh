@@ -4,6 +4,7 @@ apm install language-blade
  
 # tema
 apm install seti-ui
+apm install seti-syntax
 apm install monokai-seti
  
 # varios
