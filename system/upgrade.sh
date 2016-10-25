@@ -2,7 +2,7 @@
 clear
 echo -e "==========\nWORKING\n=========="
 apt update
-apt -y full-upgrade
+apt full-upgrade -y
 apt-get autoremove
 apt-get clean
 echo -e "==========\nREADY\n=========="

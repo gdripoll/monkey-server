@@ -6,8 +6,7 @@ apt-get -y install  \
   curl wget         \
   unzip             \
   htop nmon         \
-  mc vim            \
-  ant
+  mc vim
 apt-get autoremove
 apt-get clean
 
