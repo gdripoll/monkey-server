@@ -12,6 +12,7 @@ apt-get -y install	\
 	php5-mcrypt 		  \
 	php5-dev 				  \
 	php5-mysql 			  \
+	php5-memcached    \
   php5-xdebug
 
 echo -e "==========\nLINKS\n=========="
