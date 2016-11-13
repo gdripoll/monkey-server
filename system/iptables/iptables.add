@@ -1,0 +1,1 @@
+iptables -I INPUT 6 -p tcp --dport 8080 -j ACCEPT

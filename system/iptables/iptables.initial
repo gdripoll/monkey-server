@@ -1,0 +1,8 @@
+iptables-restore < ./iptables/v4
+ip6tables-restore < ./iptables/v6
+iptables -L -nv --line-numbers
+ip6tables -L -nv --line-numbers
+
+apt intall iptables-persistent
+# https://zertrin.org/projects/iptables-persistent/
+

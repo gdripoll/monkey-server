@@ -1,0 +1,2 @@
+iptables -L -nv --line-numbers
+ip6tables -L -nv --line-numbers
