@@ -1,5 +1,11 @@
 #!/bin/bash
 clear
+
+if [ $# -eq 0 ]
+	echo "Falta parámetro nombre del usuario."
+	return;
+fi
+
 echo -e "==========\nWORKING\n=========="
 apt-get update
 apt-get -y install  \
@@ -10,13 +16,14 @@ apt-get -y install  \
 apt-get autoremove
 apt-get clean
 
-echo -e "==========\nSETTING $USERNAME \n=========="
+echo -e "==========\nSETTING $1 \n=========="
 
-echo "alias ll='ls -al'" >> /home/$USERNAME/.bashrc
-echo "set tabstop=2" > /home/$USERNAME/.vimrc
-echo "set nu" >> /home/$USERNAME/.vimrc
-echo "syntax on" >> /home/$USERNAME/.vimrc
-echo "set nowrap" >> /home/$USERNAME/.vimrc
+echo "alias ll='ls -al'" >> /home/$1/.bashrc
+echo "set tabstop=2" > /home/$1/.vimrc
+echo "set nu" >> /home/$1/.vimrc
+echo "syntax on" >> /home/$1/.vimrc
+echo "set nowrap" >> /home/$1/.vimrc
+chown $1:$1 /home/$1/.vimrc
 
 echo -e "==========\nSETTING root \n=========="
 
