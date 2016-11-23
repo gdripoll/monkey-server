@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-if [ $# -eq 0 ]
+if [ $# -eq 0 ]; then
 	echo "Falta parámetro nombre del usuario."
 	return;
 fi
