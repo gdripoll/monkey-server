@@ -3,7 +3,7 @@ clear
 
 if [ $# -eq 0 ]; then
 	echo "Falta parámetro nombre del usuario."
-	return;
+	exit;
 fi
 
 echo -e "==========\nWORKING\n=========="
