@@ -17,18 +17,22 @@ apt-get -y install	\
   php-mbstring      \
 	php7.0-zip 
 
-echo -e "==========\nLINKS\n=========="
-ln -sf /etc/php5/mods-available/mcrypt.ini /etc/php5/fpm/conf.d/20-mcrypt.ini
-ln -sf /etc/php5/mods-available/gd.ini /etc/php5/fpm/conf.d/20-gd.ini
 
 echo -e "==========\nCONFIG\n=========="
-cp ./config/php.ini /etc/php/7.0/fpm/php.ini
-cp ./config/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
+cp ./config/php.ini         /etc/php/7.0/fpm/php.ini
+cp ./config/php-fpm.conf    /etc/php/7.0/fpm/php-fpm.conf
 cp ./config/pool.d/www.conf /etc/php/7.0/fpm/pool.d/www.conf
-cp ./config/conf.d/* /etc/php/7.0/mods-available/
+cp ./config/conf.d/*        /etc/php/7.0/mods-available/
+
+
+echo -e "==========\nLINKS\n=========="
+ln -sf /etc/php/7.0/mods-available/mcrypt.ini /etc/php/7.0/fpm/conf.d/20-mcrypt.ini
+ln -sf /etc/php/7.0/mods-available/gd.ini     /etc/php/7.0/fpm/conf.d/20-gd.ini
+
 
 echo -e "==========\nJUMPSTART\n=========="
 /etc/init.d/php7.0-fpm restart
+
 
 echo -e "==========\nREADY\n=========="
 
