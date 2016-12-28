@@ -11,7 +11,8 @@ mkdir -p /opt/oracle/ && \
 mv instantclient_12_1 /opt/oracle/instantclient && \
 ln -sf /opt/oracle/instantclient/libclntsh.so.12.1 /opt/oracle/instantclient/libclntsh.so && \
 
-pecl install oci8-1.4.10
+#pecl install oci8-1.4.10
+pecl install oci8
 
 echo -e "==========\nREADY\n=========="
 
