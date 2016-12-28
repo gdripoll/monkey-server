@@ -1,6 +1,8 @@
 #!/bin/bash
 clear
 echo -e "==========\nWORKING\n=========="
+apt update
+apt -y install libaio1 libaio-dev
 
 mkdir /tmp/oracle &&\
 cp ./soft/* /tmp/oracle && \
