@@ -3,16 +3,18 @@
 clear
 echo -e "==========\nWORKING\n=========="
 
-echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list.d/i3.list
+if [ $# -eq 0 ]; then
+        echo "Falta parámetro nombre del usuario."
+        exit;
+fi
+
 apt-get update
-apt-get --allow-unauthenticated install sur5r-keyring
-apt-get update
-apt install -y i3 i3status nitrogen
+apt install -y i3 i3status nitrogen dmenu conky compton
 
 echo -e "==========\nCONFIG\n=========="
-mkdir /home/$USERNAME/.i3
-cp config/config /home/$USERNAME/.i3/config
-chown $USERNAME:$USERNAME /home/$USERNAME/.i3
+mkdir /home/$1/.i3
+cp config/config /home/$1/.i3/config
+chown -R $1:$1 /home/$1/.i3
 
 echo -e "==========\nREADY\n=========="
 
