@@ -13,7 +13,8 @@ apt-get -y install  \
   unzip             \
   htop nmon         \
   mc vim            \
-  build-essential
+  build-essential   \
+  cifs-utils
 apt-get autoremove
 apt-get clean
 
