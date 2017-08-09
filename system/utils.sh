@@ -14,7 +14,8 @@ apt-get -y install  \
   htop nmon         \
   mc vim            \
   build-essential   \
-  cifs-utils
+  cifs-utils        \
+  openssh-server
 apt-get autoremove
 apt-get clean
 
