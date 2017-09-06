@@ -8,9 +8,9 @@ echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
 wget https://www.dotdeb.org/dotdeb.gpg
 apt-key add dotdeb.gpg
 
-sudo apt-get update
-sudo apt-get install \
-	php7.0         \
+apt-get update
+apt-get install -y \
+  php7.0         \
   php7.0-fpm     \
   php7.0-gd      \
   php7.0-json    \
