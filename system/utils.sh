@@ -14,6 +14,7 @@ apt-get -y install  \
   htop nmon         \
   mc vim            \
   build-essential   \
+  software-properties-common \
   cifs-utils        \
   openssh-server
 apt-get autoremove
