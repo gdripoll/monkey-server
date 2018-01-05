@@ -25,3 +25,13 @@ USERNAME=goose
 ```
 
 
+
+
+
+## URLs
+
+Pycharm .deb
+https://pkgs.org/download/pycharm-community
+
+
+
