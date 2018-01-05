@@ -16,13 +16,7 @@ cd monkey-server
 
 Ready!
 
-## Use
 
-Inform the `user` to use in any installation
-
-```bash
-USERNAME=goose
-```
 
 
 
@@ -30,8 +24,19 @@ USERNAME=goose
 
 ## URLs
 
-Pycharm .deb
-https://pkgs.org/download/pycharm-community
+Pycharm [.deb] https://pkgs.org/download/pycharm-community
+
+Visual Studio Code [.deb] https://code.visualstudio.com/download
+
+Dropbox [.deb] https://www.dropbox.com/install
+
+Chrome [.deb] 
+
+
+
+then...
+
+apt-get install -f
 
 
 
