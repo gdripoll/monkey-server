@@ -2,11 +2,12 @@
 
 clear
 apt update
-apt install curl
+apt install -y curl openssh-server ca-certificates
+apt install -y postfix
 
 cd /tmp
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
-apt-get install gitlab-ce
+apt install -y gitlab-ce
 gitlab-ctl reconfigure
 
 #
