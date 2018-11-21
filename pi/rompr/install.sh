@@ -10,8 +10,10 @@ chmod -R 777 /work
 echo CLONE ----------------------------------------
 cd /work
 git clone https://github.com/fatg3erman/RompR.git /work/RompR
-mkdir prefs albumart
-chown www-data prefs albumart
+mkdir /work/RompR/prefs
+mkdir /work/RompR/albumart
+chown www-data /work/RompR/prefs
+chown www-data /work/RompR/albumart
 
 echo INSTALL --------------------------------------
 apt update
