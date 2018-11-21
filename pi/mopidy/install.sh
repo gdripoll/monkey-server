@@ -21,7 +21,7 @@ chmod -R 777 /work/mp3
 cp Julia.mp3 /work/mp3
 
 #/etc/mopidy/mopidy.conf
-if [ -f /etc/mopidy/mopidy.conf ]
+if [ -f /etc/mopidy/mopidy.conf ]; then
 	mv /etc/mopidy/mopidy.conf /etc/mopidy/mopidy.conf.ori
 fi
 cp mopidy.conf /etc/mopidy/mopidy.conf
@@ -36,4 +36,4 @@ dpkg-reconfigure mopidy
 service mopidy start
 service mopidy status
 
-
+echo CONFIG --------------------------------------
