@@ -9,8 +9,7 @@ chmod -R 777 /work
 
 echo CLONE ----------------------------------------
 cd /work
-git clone https://github.com/fatg3erman/RompR.git
-cd RompR
+git clone https://github.com/fatg3erman/RompR.git /work/RompR
 mkdir prefs albumart
 chown www-data prefs albumart
 
