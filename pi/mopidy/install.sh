@@ -10,11 +10,11 @@ apt update
 apt install mopidy
 
 echo DIRS ----------------------------------------
-if [ ! -f /work ]; then
+if [ ! -d /work ]; then
   mkdir /work
 fi
 chmod -R 777 /work
-if [ ! -f /work/mp3 ]; then
+if [ ! -d /work/mp3 ]; then
    mkdir /work/mp3
 fi
 chmod -R 777 /work/mp3

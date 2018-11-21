@@ -2,20 +2,21 @@
 clear
 
 echo DIRS ----------------------------------------
-if [ ! -f /work ]; then
+if [ ! -d /work ]; then
   mkdir /work
 fi
 chmod -R 777 /work
 
 echo CLONE ----------------------------------------
+cd /work
 git clone https://github.com/fatg3erman/RompR.git
 cd RompR
 mkdir prefs albumart
-chown www-data pregs albumart
+chown www-data prefs albumart
 
 echo INSTALL --------------------------------------
 apt update
-apt install nginx php-curl php-sqlite3 php-gd php-json php-xml php-mbstring php-fpm imagemagick
+apt install -y nginx php-curl php-sqlite3 php-gd php-json php-xml php-mbstring php-fpm imagemagick
 
 echo CONFIG ---------------------------------------
 rm /etc/nginx/sites-enabled/default
