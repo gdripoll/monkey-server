@@ -7,7 +7,7 @@ wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/stretch.li
 
 echo UPDATE --------------------------------------
 apt update
-apt install mopidy
+apt install -y mopidy
 
 echo DIRS ----------------------------------------
 if [ ! -d /work ]; then
