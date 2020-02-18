@@ -16,6 +16,7 @@ apt-get -y install  \
   build-essential   \
   software-properties-common \
   cifs-utils        \
+	net-tools         \
   openssh-server
 apt-get autoremove
 apt-get clean
