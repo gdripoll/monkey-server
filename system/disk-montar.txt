@@ -1,0 +1,10 @@
+https://www.wikihow.com/Linux-How-to-Mount-Drive
+
+encontrar discos
+lsblk -lf
+
+Archivo para montar discos permanentemente
+
+/ets/fstab
+
+

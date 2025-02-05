@@ -1,0 +1,19 @@
+DOC
+https://shape.host/resources/how-to-configure-network-on-debian-12-a-guide-for-beginners
+
+
+ver redes: ip a
+
+IP ESTATICA
+------------------
+en /etc/systemd/network/20-wired-static.network
+------------------
+[Match]
+Name=eth0
+
+[Network]
+Address=192.168.1.100/24
+Gateway=192.168.1.1
+DNS=8.8.8.8
+DNS=8.8.4.4
+-------------------
