@@ -13,6 +13,7 @@ apt-get update
 echo -e "==========\nWORKING\n=========="
 # basics
 apt-get -y install curl wget unzip htop nmon vim mc cifs-utils net-tools
+apt-get -y install ntfs-3g
 # clean
 apt-get autoremove
 apt-get clean

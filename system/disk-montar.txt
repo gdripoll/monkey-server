@@ -7,4 +7,11 @@ Archivo para montar discos permanentemente
 
 /ets/fstab
 
+# discos internos
+UUID=8acefc90-fa8d-4611-8bbc-c8739c61409f       /parley ext4    errors=remount-ro       0       1
+UUID=b88ef05d-fbb8-4563-a247-90395cec5ee9       /handbag        ext4    errors=remount-ro       0       1
+# discos usb
+UUID=F4CAFC8BCAFC4B7E   /bigbook        ntfs-3g         auto,rw,users   0       0
+UUID=9E1EDDD81EDDAA13   /backups        ntfs-3g         auto,rw,users   0       0
+
 
